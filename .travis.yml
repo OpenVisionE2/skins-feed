@@ -21,7 +21,7 @@ script:
 - find . -name '*Packages*' -type f | xargs rm -f
 - mkdir -p skins
 - cd skins
-- ./ts.sh
+- ../ts.sh
 - mv -f *.ipk ../
 - cd ..
 - rm -rf skins
