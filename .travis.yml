@@ -19,12 +19,8 @@ script:
 - cd feed
 - find . -name '*.ipk' -type f | xargs rm -f
 - find . -name '*Packages*' -type f | xargs rm -f
-- mkdir -p skins
-- cd skins
-- ../ts.sh
-- mv -f *.ipk ../
-- cd ..
-- rm -rf skins
+- ./get-ts.sh
+- ./get-common.sh
 - chmod 755 IPKFeedGenerator.jar
 - java -jar IPKFeedGenerator.jar
 - cd ..
