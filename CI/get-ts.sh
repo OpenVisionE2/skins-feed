@@ -1,5 +1,9 @@
 #!/bin/sh
 
+cd feed
+find . -name '*.ipk' -type f | xargs rm -f
+find . -name '*Packages*' -type f | xargs rm -f
+
 mkdir -p ts
 cd ts
 mkdir -p skinshd
